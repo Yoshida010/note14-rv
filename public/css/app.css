@@ -466,11 +466,19 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.flex {
-  display: flex;
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-.bg-current {
-  background-color: currentColor;
+.w-full {
+  width: 100%;
+}
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.text-center {
+  text-align: center;
 }
 .underline {
   text-decoration-line: underline;
