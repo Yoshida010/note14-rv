@@ -1,0 +1,11 @@
+
+/* どうしてもTailwindでは当てられないスタイルを記述 */
+
+.paginate nav {
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-around;
+}
