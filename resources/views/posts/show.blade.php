@@ -15,6 +15,7 @@
                     <dd>{{$post->body}}</dd>
                 </div>
             </dl>
+            <a href="/posts/{{$post->id}}/edit">編集</a>
             <a href="/posts">戻る</a>
         </section>
     </body>
