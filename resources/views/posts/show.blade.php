@@ -16,7 +16,21 @@
                 </div>
             </dl>
             <a href="/posts/{{$post->id}}/edit">編集</a>
+            <form id="deleteForm" action="/posts/{{$post->id}}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button id="deleteBtn" class="delete-btn">削除</button>
+            </form>
             <a href="/posts">戻る</a>
         </section>
+        <script>
+            const btn = document.getElementById('deleteBtn');
+            btn.addEventListener('click', () => {
+                const result = window.confirm('投稿を削除しますか？');
+                if(result) {
+                    document.getElementById('deleteForm').submit();
+                }
+            })
+        </script>
     </body>
 </html>
