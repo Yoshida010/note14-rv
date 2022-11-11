@@ -22,7 +22,7 @@
                 @method('DELETE')
                 <button id="deleteBtn" class="delete-btn">削除</button>
             </form>
-            <a href="/posts">戻る</a>
+            <a href="/">戻る</a>
         </section>
         <script>
             const btn = document.getElementById('deleteBtn');
