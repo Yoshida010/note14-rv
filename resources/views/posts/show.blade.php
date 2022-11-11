@@ -15,6 +15,7 @@
                     <dd>{{$post->body}}</dd>
                 </div>
             </dl>
+            <a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a>
             <a href="/posts/{{$post->id}}/edit">編集</a>
             <form id="deleteForm" action="/posts/{{$post->id}}" method="POST">
                 @csrf
